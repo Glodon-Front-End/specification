@@ -6,14 +6,14 @@
 title: 闪烁之狐
 subtitle: 闪烁之狐
 description: 从来没有真正的绝境，只有心灵的迷途
-keywords: 闪烁之狐, Blinkfox
-author: blinkfox
+keywords: 闪烁之狐, Henry-Front-End
+author: Henry-Front-End
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://blinkfox.github.io/
+url: https://Henry-Front-End.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -58,7 +58,7 @@ index_generator:
   path: ''
   per_page: 12
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -85,7 +85,7 @@ theme: hexo-theme-matery
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/blinkfox/blinkfox.github.io.git
+  repo: https://github.com/Henry-Front-End/Henry-Front-End.github.io.git
 
 search:
   path: search.xml
