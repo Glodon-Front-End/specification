@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://Henry-Front-End.github.io/
+url: https://ctrl-shift-delete.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -85,7 +85,7 @@ theme: hexo-theme-matery
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/Henry-Front-End/Henry-Front-End.github.io.git
+  repo: https://github.com/ctrl-shift-delete/ctrl-shift-delete.github.io.git
 
 search:
   path: search.xml
