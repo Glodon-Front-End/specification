@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://ctrl-shift-delete.github.io/
 root: /
-permalink: :title/ # :year/:month/:day/:title/
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
@@ -49,8 +49,8 @@ highlight:
 
 prism_plugin:
   mode: 'preprocess'    # realtime/preprocess
-  theme: 'tomorrow'
-  line_number: false    # default false
+  theme: 'hopscotch' # okaidia/coy/hopscotch
+  line_number: true    # default false
   custom_css:
 # 搜索 https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md#%E6%90%9C%E7%B4%A2
 search:
