@@ -1,9 +1,8 @@
 ---
-layout: post
-title: Window 平台 Git-Bash 的配置
-categories: [Windows, Git]
-description: Window 平台 Git-Bash 的配置
-keywords: Windows, Git-Bash
+title: Git-Bash 的配置
+date: 2019-05-05
+categories: [工具]
+tags: [Windows, Git]
 ---
 
 通过这篇文章, 可以了解到:
@@ -86,7 +85,7 @@ CursorBlinks=yes
 
 然后重启 Git-Bash, 即可看到新的主题配色, 以下是我的 Git-Bash 外观主题配置样例.
 
-![](/assets/images/posts/git/5B71993FBCA98C3B9BF53A3AE063DA19.png)
+![](/medias/postimg/git/1.png)
 
 ## Git-Bash 修改前缀 (隐藏用户@主机)
 
@@ -175,25 +174,25 @@ export PS1="\W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 4. 也就是说, 现在 `f` 就是 `echo 'frank is awesome'` 的缩写了, 利用这个技巧, 我们可以把很多常见的命令缩写一下, 比如:
 
 ```
-   alias gl='git pull'
-   alias gaa='git add .'
-   alias gcmsg='git commit -m'
-   alias gcam='git commit -a -m'
-   alias gp='git push'
-   alias gco='git checkout'
-   alias gm='git merge'
-   alias gss='git status -s'
-   alias glol='git log –graph –pretty = format:’%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset’ –abbrev-commit'
-   alias grh='git reset HEAD'
-   alias gba='git branch -a'
-   alias gcf='git config –list'
-   alias gcl='git clone –recursive'
-   alias gd='git diff'
-   alias ghh='git help'
+alias gl='git pull'
+alias gaa='git add .'
+alias gcmsg='git commit -m'
+alias gcam='git commit -a -m'
+alias gp='git push'
+alias gco='git checkout'
+alias gm='git merge'
+alias gss='git status -s'
+alias glol='git log –graph –pretty = format:’%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset’ –abbrev-commit'
+alias grh='git reset HEAD'
+alias gba='git branch -a'
+alias gcf='git config –list'
+alias gcl='git clone –recursive'
+alias gd='git diff'
+alias ghh='git help'
 
-   alias ns='npm run serve'
-   alias nb='npm run build'
-   alias nd='npm run dev'
+alias ns='npm run serve'
+alias nb='npm run build'
+alias nd='npm run dev'
 ```
 
 5. 保存退出, 然后运行 `source ~/.bashrc`

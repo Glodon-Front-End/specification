@@ -40,7 +40,9 @@ var searchFunc = function(path, search_id, content_id) {
           var index_content = -1
           var first_occur = -1
           // only match artiles with not empty titles and contents
-          if (data_title != '' && data_content != '') {
+          // if (data_title != '' && data_content != '') {
+          // only match artiles with not empty titles
+          if (data_title != '') {
             keywords.forEach(function(keyword, i) {
               index_title = data_title.indexOf(keyword)
               index_content = data_content.indexOf(keyword)
@@ -84,7 +86,7 @@ var searchFunc = function(path, search_id, content_id) {
                 )
               })
 
-              str += '<p class="search-result">' + match_content + '...</p>'
+              match_content && (str += '<p class="search-result">' + match_content + '...</p>')
             }
             str += '</li>'
           }
