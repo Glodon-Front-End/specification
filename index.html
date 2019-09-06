@@ -359,15 +359,72 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         <div class="container">
             <div class="row">
                 <div class="col s10 offset-s1">
-                    <div class="title center-align">Chrome 浏览器必知必会的小技巧</div>
+                    <div class="title center-align">css 编码指南</div>
                     <div class="description center-align">
                     
-                        这篇文章主要介绍的就是一些 Chrome 浏览器的小技巧, 很简单, 希望对大家有所帮助.
-这其中的一些小技巧在低版本中是没有的, 所以建议大家用最新版的, 目前最新版是 62, 版本很重要, 如果发现有些技巧不起作用, 请先查看浏览器的版
+                        css 规范代码格式化样式书写一般有两种: 一种是紧凑格式(Compact)
+.jdc{display: block;width: 50px;}
+一种是展开格式(Expanded)
+.jdc {
+  display: block;
+  wi
                     
                     </div>
                     <div class="cover-btns">
-                        <a href="/Chrome browser will know the trick/" class="waves-effect waves-light btn" target="_blank">
+                        <a href="/coding-guidelines-css/" class="waves-effect waves-light btn" target="_blank">
+                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="carousel-item amber white-text carousel-post bg-cover"
+            style="background-image: url('/medias/featureimages/16.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s1">
+                    <div class="title center-align">html 编码指南</div>
+                    <div class="description center-align">
+                    
+                        html 规范元素及标签闭合HTML 元素共有以下 5 种:
+
+空元素:area、base、br、col、command、embed、hr、img、input、keygen、link、meta、param、source、track、wbr
+
+                    
+                    </div>
+                    <div class="cover-btns">
+                        <a href="/coding-guidelines-html/" class="waves-effect waves-light btn" target="_blank">
+                            <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="carousel-item amber white-text carousel-post bg-cover"
+            style="background-image: url('/medias/featureimages/22.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s1">
+                    <div class="title center-align">js 编码指南</div>
+                    <div class="description center-align">
+                    
+                        js 代码规范单行代码块在单行代码块中使用空格
+不推荐
+function foo () {return true}
+if (foo) {bar = 0}
+推荐
+function foo() { return true }
+if (foo) 
+                    
+                    </div>
+                    <div class="cover-btns">
+                        <a href="/coding-guidelines-js/" class="waves-effect waves-light btn" target="_blank">
                             <i class="icon fa fa-eye fa-fw"></i>阅读更多
                         </a>
                     </div>
@@ -433,7 +490,7 @@ $(function () {
                         <div class="dream">
     
     <div class="title center-align">
-        <i class="fa fa-lightbulb-o"></i>&nbsp;&nbsp;往日繁华
+        <i class="fa fa-heartbeat"></i>&nbsp;&nbsp;往日繁华
     </div>
     
     <div class="row">
@@ -442,6 +499,7 @@ $(function () {
         </div>
     </div>
 </div>
+
                     
 
                     
@@ -468,20 +526,73 @@ $(function () {
             
             <div class="article col s12 m6 l4 overflow-policy" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/hello-world/">
+                    <a href="/markdown-concise-tutorial/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Markdown 简明教程">
                             
-                            <span class="card-title">Hello World</span>
+                            <span class="card-title">Markdown 简明教程</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                                Markdown 学习Markdown 是一种轻量级的「标记语言」, 它的优点很多, 目前也被越来越多的写作爱好者, 撰稿者广泛使用. 看到这里请不要被「标记」、「语言」所迷惑, Markdown 的语法十分简单. 常用的标记符号也不超过十
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-06
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/工具/" class="post-category" target="_blank">
+                                    工具
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Markdown/" target="_blank">
+                            <span class="chip bg-color">Markdown</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4 overflow-policy" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/coding-guidelines-js/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="js 编码指南">
+                            
+                            <span class="card-title">js 编码指南</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                js 代码规范单行代码块在单行代码块中使用空格
+不推荐
+function foo () {return true}
+if (foo) {bar = 0}
+推荐
+function foo() { return true }
+if (foo) 
                             
                         </div>
                         <div class="publish-info">
@@ -490,26 +601,140 @@ $(function () {
                             </span>
                             <span class="publish-author">
                                 
-                                <i class="fa fa-user fa-fw"></i>
-                                Henry
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/前端/" class="post-category" target="_blank">
+                                    前端
+                                </a>
+                                
                                 
                             </span>
                         </div>
                     </div>
 
                     
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Js/" target="_blank">
+                            <span class="chip bg-color">Js</span>
+                        </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
             
             <div class="article col s12 m6 l4 overflow-policy" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/Window platform Git-Bash configuration/">
+                    <a href="/coding-guidelines-html/">
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Window 平台 Git-Bash 的配置">
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="html 编码指南">
                             
-                            <span class="card-title">Window 平台 Git-Bash 的配置</span>
+                            <span class="card-title">html 编码指南</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                html 规范元素及标签闭合HTML 元素共有以下 5 种:
+
+空元素:area、base、br、col、command、embed、hr、img、input、keygen、link、meta、param、source、track、wbr
+
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-04
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/前端/" class="post-category" target="_blank">
+                                    前端
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Html/" target="_blank">
+                            <span class="chip bg-color">Html</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4 overflow-policy" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/coding-guidelines-css/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="css 编码指南">
+                            
+                            <span class="card-title">css 编码指南</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                css 规范代码格式化样式书写一般有两种: 一种是紧凑格式(Compact)
+.jdc{display: block;width: 50px;}
+一种是展开格式(Expanded)
+.jdc {
+  display: block;
+  wi
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-03
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/前端/" class="post-category" target="_blank">
+                                    前端
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Css/" target="_blank">
+                            <span class="chip bg-color">Css</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4 overflow-policy" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/Git-Bash-configuration/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Git-Bash 的配置">
+                            
+                            <span class="card-title">Git-Bash 的配置</span>
                         </div>
                     </a>
 
@@ -534,12 +759,8 @@ Git-Bash 的优点在开
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/Windows/" class="post-category" target="_blank">
-                                    Windows
-                                </a>
-                                
-                                <a href="/categories/Windows/Git/" class="post-category" target="_blank">
-                                    Git
+                                <a href="/categories/工具/" class="post-category" target="_blank">
+                                    工具
                                 </a>
                                 
                                 
@@ -548,12 +769,24 @@ Git-Bash 的优点在开
                     </div>
 
                     
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Windows/" target="_blank">
+                            <span class="chip bg-color">Windows</span>
+                        </a>
+                        
+                        <a href="/tags/Git/" target="_blank">
+                            <span class="chip bg-color">Git</span>
+                        </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
             
             <div class="article col s12 m6 l4 overflow-policy" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/Chrome browser will know the trick/">
+                    <a href="/chrome-browser-will-know-the-trick/">
                         <div class="card-image">
                             
                             
@@ -578,8 +811,8 @@ Git-Bash 的优点在开
                                 
                                 <i class="fa fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/Chrome/" class="post-category" target="_blank">
-                                    Chrome
+                                <a href="/categories/浏览器/" class="post-category" target="_blank">
+                                    浏览器
                                 </a>
                                 
                                 
@@ -587,6 +820,14 @@ Git-Bash 的优点在开
                         </div>
                     </div>
 
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/Chrome/" target="_blank">
+                            <span class="chip bg-color">Chrome</span>
+                        </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -601,13 +842,13 @@ Git-Bash 的优点在开
 <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            本站由&copy;<a href="https://ctrl-shift-delete.github.io/" target="_blank">Henry</a>基于
+            本站由&copy;<a href="https://ctrl-shift-delete.github.io/" target="_blank">Henry</a> 基于
             <a href="https://hexo.io/" target="_blank">Hexo</a> 的
-            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
+            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a> 主题搭建.
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">4.6k</span>
+                <span class="white-color">13.4k</span>
             
 
             

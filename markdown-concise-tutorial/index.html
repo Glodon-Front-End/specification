@@ -1,0 +1,1293 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Markdown 简明教程, Front-End">
+    <meta name="description" content="Markdown 学习Markdown 是一种轻量级的「标记语言」, 它的优点很多, 目前也被越来越多的写作爱好者, 撰稿者广泛使用. 看到这里请不要被「标记」、「语言」所迷惑, Markdown 的语法十分简单. 常用的标记符号也不超过十">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Markdown 简明教程 | Henry</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <style type="text/css">
+        
+    </style>
+
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+
+<header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Henry</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <i class="fa fa-tags"></i>
+            
+            <span>标签</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Henry</div>
+        <div class="logo-desc">
+            
+            人生如若初相见
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于
+            </a>
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/ctrl-shift-delete/ctrl-shift-delete.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fa fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/ctrl-shift-delete/ctrl-shift-delete.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        Markdown 简明教程
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Markdown/" target="_blank">
+                                <span class="chip bg-color">Markdown</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/工具/" class="post-category" target="_blank">
+                                工具
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2019-09-06
+                </div>
+
+                
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
+                        2.8k
+                    </div>
+                    
+
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                        10 分
+                    </div>
+                    
+                
+
+				
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="Markdown-学习"><a href="#Markdown-学习" class="headerlink" title="Markdown 学习"></a>Markdown 学习</h2><p>Markdown 是一种轻量级的「标记语言」, 它的优点很多, 目前也被越来越多的写作爱好者, 撰稿者广泛使用. 看到这里请不要被「标记」、「语言」所迷惑, Markdown 的语法十分简单. 常用的标记符号也不超过十个, 这种相对于更为复杂的 HTML 标记语言来说, Markdown 可谓是十分轻量的, 学习成本也不需要太多, 且一旦熟悉这种语法规则, 会有一劳永逸的效果.</p>
+<h2 id="使用-Markdown-的优点"><a href="#使用-Markdown-的优点" class="headerlink" title="使用 Markdown 的优点"></a>使用 Markdown 的优点</h2><ul>
+<li>专注你的文字内容而不是排版样式.</li>
+<li>轻松的导出 HTML、PDF 和本身的 .md 文件.</li>
+<li>纯文本内容, 兼容所有的文本编辑器与字处理软件.</li>
+<li>可读, 直观. 适合所有人的写作语言.</li>
+</ul>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>工具茫茫多</p>
+<ul>
+<li>windows<ul>
+<li><a href="http://markdownpad.com/" target="_blank" rel="noopener">markdownPad2</a></li>
+<li><a href="http://code52.org/DownmarkerWPF/" target="_blank" rel="noopener">MarkPad</a></li>
+</ul>
+</li>
+<li>Linux<ul>
+<li><a href="http://sourceforge.net/p/retext/home/ReText/" target="_blank" rel="noopener">ReText</a></li>
+</ul>
+</li>
+<li>Mac<ul>
+<li><a href="http://mouapp.com/" target="_blank" rel="noopener">Mou</a></li>
+</ul>
+</li>
+<li>在线<ul>
+<li><a href="http://dillinger.io/" target="_blank" rel="noopener">Dillinger.io</a></li>
+<li><a href="http://markable.in/" target="_blank" rel="noopener">Markable.in</a></li>
+</ul>
+</li>
+<li>浏览器插件<ul>
+<li><a href="https://chrome.google.com/webstore/detail/oknndfeeopgpibecfjljjfanledpbkog" target="_blank" rel="noopener">MaDe</a> (chrome)</li>
+</ul>
+</li>
+</ul>
+<h2 id="MarkdownPad2-5-注册码"><a href="#MarkdownPad2-5-注册码" class="headerlink" title="MarkdownPad2.5 注册码"></a>MarkdownPad2.5 注册码</h2><p>邮箱:</p>
+<p><a href="mailto:Soar360@live.com" target="_blank" rel="noopener">Soar360@live.com</a></p>
+<p>授权秘钥:</p>
+<p><code>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ==</code></p>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>标题有六级</p>
+<p>由 # 组成</p>
+<p>类比于 h1 ~ h6</p>
+<p>例如:</p>
+<pre><code>
+# 这是一级标题（H1，通常用于文档标题）
+
+## 这是二级标题（H2，有些渲染器会为二级标题添加 hr 底线）
+
+### 这是三级标题（H3）
+
+#### 这是四级标题（H4）
+
+##### 这是五级标题（H5）
+
+###### 这是六级标题（H6）
+</code></pre><p>效果:</p>
+<h1 id="这是一级标题-H1-通常用于文档标题"><a href="#这是一级标题-H1-通常用于文档标题" class="headerlink" title="这是一级标题(H1, 通常用于文档标题)"></a>这是一级标题(H1, 通常用于文档标题)</h1><h2 id="这是二级标题-H2-有些渲染器会为二级标题添加-hr-底线"><a href="#这是二级标题-H2-有些渲染器会为二级标题添加-hr-底线" class="headerlink" title="这是二级标题(H2, 有些渲染器会为二级标题添加 hr 底线)"></a>这是二级标题(H2, 有些渲染器会为二级标题添加 hr 底线)</h2><h3 id="这是三级标题-H3"><a href="#这是三级标题-H3" class="headerlink" title="这是三级标题(H3)"></a>这是三级标题(H3)</h3><h4 id="这是四级标题-H4"><a href="#这是四级标题-H4" class="headerlink" title="这是四级标题(H4)"></a>这是四级标题(H4)</h4><h5 id="这是五级标题-H5"><a href="#这是五级标题-H5" class="headerlink" title="这是五级标题(H5)"></a>这是五级标题(H5)</h5><h6 id="这是六级标题-H6"><a href="#这是六级标题-H6" class="headerlink" title="这是六级标题(H6)"></a>这是六级标题(H6)</h6><p><strong>注: 在 # 后加一个空格再跟标题</strong></p>
+<h3 id="首行缩进"><a href="#首行缩进" class="headerlink" title="首行缩进"></a>首行缩进</h3><p>    写文章时, 我们常常希望能够首行缩进, 这时可以在段首加入 <code>&amp;ensp;</code> 或 <code>&amp;nbsp</code> 来输入一个空格. 加入 <code>&amp;emsp;</code> 来输入两个空格. 这里的空格是英文状态的空格, 英文状态的两个空格相当于中文状态的一个空格</p>
+<h3 id="添加空行"><a href="#添加空行" class="headerlink" title="添加空行"></a>添加空行</h3><p>添加空行可以结束先前的格式状态. 个人建议在改变格式时, 均添加一个空行</p>
+<p>例如:</p>
+<pre><code>
+&gt; 引用状态
+
+[空行]
+
+### 标题状态
+
+[空行]
+---
+[空行]
+
+* 列表状态
+* 列表状态
+
+[空行]</code></pre><p>效果:</p>
+<blockquote>
+<p>引用状态</p>
+</blockquote>
+<h3 id="标题状态"><a href="#标题状态" class="headerlink" title="标题状态"></a>标题状态</h3><hr>
+<ul>
+<li>列表状态</li>
+<li>列表状态</li>
+</ul>
+<h3 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h3><p>换行的时候 结尾要加上 两个空格.</p>
+<p>在当前行的结尾加 2 个空格</p>
+<p>这行就会新起一行</p>
+<h3 id="分隔符"><a href="#分隔符" class="headerlink" title="分隔符"></a>分隔符</h3><p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线, 行内不能有其他东西. 你也可以在星号或是减号中间插入空格. 当前后都有段落时, 请空出一行. 下面每种写法都可以建立分隔线:</p>
+<pre><code>前面的段落
+[空行]
+
+* * *
+
+***
+*****
+
+* - -
+
+---------------------------------------
+[空行]
+后面的段落
+</code></pre><p>前面的段落</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<p>后面的段落</p>
+<h3 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h3><ul>
+<li>斜体: 使用 两个 <code>*</code> 或 <code>_</code> 中间夹杂的就是 斜体, 例如: <code>*斜体* _斜体_</code> <em>斜体</em> <em>斜体</em></li>
+<li>粗体: 使用 四个 <code>*</code> 或 <code>_</code> 中间夹杂的就是 粗体, 例如: <code>**粗体** __粗体__</code> <strong>粗体</strong> <strong>粗体</strong></li>
+<li>粗斜体文本: 使用 八个 <code>*</code> 或 <code>_</code> 中间夹杂的就是 粗斜体文本, 例如: <code>****粗斜体**** ____粗斜体____</code> *<strong>*粗斜体**</strong> _<strong>_粗斜体__</strong></li>
+<li>删除线: 使用 两个波浪线 <code>~</code> 中间夹杂的就是 删除线, 例如: <code>~~删除线~~</code> <del>删除线</del></li>
+</ul>
+<p>但是, 如果你的 <code>*</code> 、 <code>_</code> 和 <code>~</code> 两边都有空白的话, 它们就只会被当成普通的符号: 这是一段* 文本强调 *的说明示例.</p>
+<p><code>\*如果要在文字前后直接插入普通的星号或底线，你可以用反斜线（转义符）\*</code> :*如果要在文字前后直接插入普通的星号或底线, 你可以用反斜线(转义符)*</p>
+<h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>使用 <code>+ - *</code> 都表示无序列表</p>
+<p><strong>注: 后面也需要跟一个空格</strong></p>
+<p>例如:</p>
+<pre><code>
+* 使用 - 号
+  + 吃饭
+  + 睡觉
+  + 打豆豆
+  + 再打豆豆
+    - 接着打豆豆
+* 使用 + 号
+  + 吃饭
+  + 睡觉
+  + 打豆豆
+* 使用 * 号
+  + 吃饭
+  + 睡觉
+  + 打豆豆
+</code></pre><p>效果:</p>
+<ul>
+<li>使用 - 号<ul>
+<li>吃饭</li>
+<li>睡觉</li>
+<li>打豆豆</li>
+<li>再打豆豆<ul>
+<li>接着打豆豆</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>使用 + 号<ul>
+<li>吃饭</li>
+<li>睡觉</li>
+<li>打豆豆</li>
+</ul>
+</li>
+<li>使用 * 号<ul>
+<li>吃饭</li>
+<li>睡觉</li>
+<li>打豆豆</li>
+</ul>
+</li>
+</ul>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>使用 <code>1. 2. 3.</code> 可以表示有序列表</p>
+<p><strong>注: 后面也需要跟一个空格</strong></p>
+<p>例如:</p>
+<pre><code>
+1. 买菜
+4. 洗菜
+5. 切菜
+8. 炒菜
+9. 吃菜
+6. 洗碗
+</code></pre><p>效果:</p>
+<ol>
+<li>买菜</li>
+<li>洗菜</li>
+<li>切菜</li>
+<li>炒菜</li>
+<li>吃菜</li>
+<li>洗碗</li>
+</ol>
+<p><strong>注: 前面数字可以不按顺序来</strong></p>
+<h3 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h3><pre><code>
+1. 列出所有元素：
+    - 无序列表元素 A
+        1. 元素 A 的有序子列表
+    - 前面加四个空格
+2. 列表里的多段换行：
+
+    前面必须加四个空格，
+    这样换行，整体的格式不会乱
+
+3. 列表里引用：
+
+    &gt; 前面空一行
+
+    &gt; 仍然需要在 &gt;  前面加四个空格
+
+4. 列表里代码段：
+
+    前面四个空格, 之后按代码语法书写
+
+        或者直接空八个，引入代码块</code></pre><ol>
+<li><p>列出所有元素:</p>
+<ul>
+<li>无序列表元素 A<ol>
+<li>元素 A 的有序子列表</li>
+</ol>
+</li>
+<li>前面加四个空格</li>
+</ul>
+</li>
+<li><p>列表里的多段换行:</p>
+<p>前面必须加四个空格，<br>这样换行，整体的格式不会乱</p>
+</li>
+<li><p>列表里引用:</p>
+<blockquote>
+<p>前面空一行</p>
+</blockquote>
+<blockquote>
+<p>仍然需要在 &gt; 前面加四个空格</p>
+</blockquote>
+</li>
+<li><p>列表里代码段:</p>
+<p>前面四个空格，之后按代码语法书写</p>
+<pre><code>或者直接空八个，引入代码块</code></pre></li>
+</ol>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>使用 <code>&gt;</code> 表示引用</p>
+<p>例如:</p>
+<p><code>&gt; 海明威曾经写过：我可以被杀死，但是不可以被打败</code></p>
+<p>效果:</p>
+<blockquote>
+<p>海明威曾经写过: 我可以被杀死, 但是不可以被打败</p>
+</blockquote>
+<h3 id="引用嵌套"><a href="#引用嵌套" class="headerlink" title="引用嵌套"></a>引用嵌套</h3><pre><code>
+* 引用里嵌套引用
+
+&gt; 最外层引用
+&gt; &gt; 多一个 &gt; 嵌套一层引用
+&gt; &gt; &gt; 可以嵌套很多层
+
+* 引用里嵌套列表
+
+&gt; - 这是引用里嵌套的一个列表
+&gt; - 还可以有子列表
+&gt; * 子列表需要从 - 之后延后四个空格开始
+</code></pre><ul>
+<li>引用里嵌套引用</li>
+</ul>
+<blockquote>
+<p>最外层引用</p>
+<blockquote>
+<p>多一个 &gt; 嵌套一层引用</p>
+<blockquote>
+<p>可以嵌套很多层</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<ul>
+<li>引用里嵌套列表</li>
+</ul>
+<blockquote>
+<ul>
+<li>这是引用里嵌套的一个列表</li>
+<li>还可以有子列表</li>
+</ul>
+<ul>
+<li>子列表需要从 - 之后延后四个空格开始</li>
+</ul>
+</blockquote>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><pre><code>
+| 默认对齐 | 居左对齐 | 居中对齐 | 居右对齐 |
+|---|:---|:---:|---:|
+| 窗前 | 明月 | 光 |, |
+| 疑是 | 地上 | 霜 |, |
+
+| 姓名 | 性别 | 年纪 | 班级 |
+|--|:--|:--:|--|
+| 张三 | 男 | 29|0830|
+| 李四 | 女 | 28|0830|
+
+| 时间 | 地点 | 人物 | 事件事件事件事件事件事件事件 |
+|--|--|--|:--:|
+| 上午 | 北京 | 我 | 吃面 |
+</code></pre><p>效果：</p>
+<table>
+<thead>
+<tr>
+<th>默认对齐</th>
+<th align="left">居左对齐</th>
+<th align="center">居中对齐</th>
+<th align="right">居右对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>窗前</td>
+<td align="left">明月</td>
+<td align="center">光</td>
+<td align="right">，</td>
+</tr>
+<tr>
+<td>疑是</td>
+<td align="left">地上</td>
+<td align="center">霜</td>
+<td align="right">，</td>
+</tr>
+</tbody></table>
+<hr>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th align="left">性别</th>
+<th align="center">年纪</th>
+<th>班级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>张三</td>
+<td align="left">男</td>
+<td align="center">29</td>
+<td>0830</td>
+</tr>
+<tr>
+<td>李四</td>
+<td align="left">女</td>
+<td align="center">28</td>
+<td>0830</td>
+</tr>
+</tbody></table>
+<hr>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>地点</th>
+<th>人物</th>
+<th align="center">事件事件事件事件事件事件事件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>上午</td>
+<td>北京</td>
+<td>我</td>
+<td align="center">吃面</td>
+</tr>
+</tbody></table>
+<p><strong>注：表格开始与结尾都需要一行空行</strong></p>
+<h3 id="插入代码"><a href="#插入代码" class="headerlink" title="插入代码"></a>插入代码</h3><p>插入代码的方式有两种</p>
+<ol>
+<li>在每行代码前加入 4 个空格或者添加一个制表符（TAB 键）. 制表符长度为 4</li>
+<li>在代码两侧添加三个反引号 “```”。</li>
+</ol>
+<h4 id="方式一"><a href="#方式一" class="headerlink" title="方式一"></a>方式一</h4><p>其缩进是相对于当前格式状态下的。</p>
+<p>例如：</p>
+<pre><code>
+* 列表项
+* 列表项
+
+[空行]
+[TAB][TAB]console.log('hello world!')
+[空行]
+本例中制表符长度为 2
+</code></pre><p>效果：</p>
+<ul>
+<li><p>列表项</p>
+</li>
+<li><p>列表项</p>
+<pre><code>        console.log('hello world!')</code></pre></li>
+</ul>
+<h4 id="方式-2"><a href="#方式-2" class="headerlink" title="方式 2"></a>方式 2</h4><p>如果你只想高亮语句中的某个函数名或关键字，可以使用这个符号 ` 中间夹着代码 ` function_name() <code>function_name()</code> 实现</p>
+<p>通常编辑器根据代码片段适配合适的高亮方法，但你也可以用 ` ` ` 包裹一段代码，并指定一种语言</p>
+<p>```js</p>
+<p>$(document).ready(function () {</p>
+<p>alert(‘hello world’);</p>
+<p>});</p>
+<p>```</p>
+<pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">// js</span>
+<span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'hello world'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<pre class=" language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- html --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>好好学习<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>天天向上<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>锻炼身体<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span></code></pre>
+<pre class=" language-css"><code class="language-css"><span class="token comment" spellcheck="true">/* css */</span>
+<span class="token selector">a </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>支持的语言: <code>1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir</code></p>
+<p>在 <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank" rel="noopener">这里</a> 可以找到 github 支持的语言</p>
+<p>反引号最好在代码的前后行添加, 而不是直接加在代码两边.</p>
+<p>如你不需要代码高亮, 可以用下面的方法禁用:</p>
+<p>```<br>nohighlight</p>
+<p>// js</p>
+<p>$(document).ready(function () {</p>
+<p>alert(‘hello world’);</p>
+<p>});</p>
+<p>```</p>
+<pre class=" language-nohighlight"><code class="language-nohighlight">// js
+$(document).ready(function () {
+    alert('hello world');
+});</code></pre>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>下面是行内链接示例:</p>
+<pre><code>[百度](http://www.baidu.com)
+http://www.baidu.com
+&lt;http://www.baidu.com&gt;</code></pre><p><a href="http://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
+<p><a href="http://www.baidu.com" target="_blank" rel="noopener">http://www.baidu.com</a></p>
+<p><a href="http://www.baidu.com" target="_blank" rel="noopener">http://www.baidu.com</a></p>
+<p>下面是一个参考链接的示例:</p>
+<pre><code>[链接到百度][1]
+
+[链接到 Google][2]
+
+[还是链接到百度][1]
+
+[1]:https://www.baidu.com
+[2]:https://www.google.com
+
+注：
+'[1]:https://www.baidu.com' 和 '[2]:https://www.google.com' 这几个链接可以写到文章的最后，就相当于 word 中的引用</code></pre><p>效果:</p>
+<p><a href="https://www.baidu.com" target="_blank" rel="noopener">链接到百度</a></p>
+<p><a href="https://www.google.com" target="_blank" rel="noopener">链接到 Google</a></p>
+<p><a href="https://www.baidu.com" target="_blank" rel="noopener">还是链接到百度</a></p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><pre><code>
+![图片的 alt](图片的路径，可以是相对路径，也可以是绝对路径 "图片的 title")
+
+例如：
+
+![无名](/medias/postimg/markdown/1.jpg "无名")
+
+其中图片的 alt 和 title 可以不写
+例如：
+![](/medias/postimg/markdown/1.jpg)</code></pre><p>效果:</p>
+<p><img src="/medias/postimg/markdown/1.jpg" alt="无名" title="无名"></p>
+<p>图片也可以使用参考链接的形式</p>
+<pre><code>![无名][id]
+
+[id]: /medias/postimg/markdown/1.jpg "无名"</code></pre><h4 id="限制图片大小并居中"><a href="#限制图片大小并居中" class="headerlink" title="限制图片大小并居中"></a>限制图片大小并居中</h4><p>许多 MarkDown 编辑器中直接按原图大小显示图片, 造成版面凌乱. 使用该命令 <code>&lt;img src="图片地址" width="图片显示宽度" height="显示高度" alt="图片名称"/&gt;</code> 设置图片大小, 再用 <code>&lt;div style="text-align:center"&gt;&lt;/div&gt;</code> 命令包裹达到居中效果.</p>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">text-align</span><span class="token punctuation">:</span>center</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/medias/postimg/markdown/2.gif<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>300<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>狗粮够吗?<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<div style="text-align:center">
+    <img src="/medias/postimg/markdown/2.gif" width="300" alt="狗粮够吗?">
+</div>
+
+<h3 id="使用表情"><a href="#使用表情" class="headerlink" title="使用表情"></a>使用表情</h3><p>Git 中的 Markdown 语法扩展中包括了一些表情包.</p>
+<p>用法: 使用两个冒号将表情夹杂起来即可</p>
+<p>例如:</p>
+<p><code>表情一：:+1:, 表情二：:o:</code></p>
+<p>效果:</p>
+<p>表情一: :+1: , 表情二: <span class="github-emoji" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/2b55.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/2b55.png?v8">⭕</span></p>
+<p>更多表情可以查看 <a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/" target="_blank" rel="noopener">表情大全</a> 或 <a href="https://github.com/scotch-io/All-Github-Emoji-Icons" target="_blank" rel="noopener">scotch-io/All-Github-Emoji-Icons</a></p>
+<h3 id="忽略-Markdown-关键字-转义"><a href="#忽略-Markdown-关键字-转义" class="headerlink" title="忽略 Markdown 关键字 (转义)"></a>忽略 Markdown 关键字 (转义)</h3><p>和 C 语言 printf 函数一样, 如果我们不想让某个字符转换成 Markdown 关键字, 可以在前面加上 <code>\</code> . 比如我们想输入两个 *, 就可以用:</p>
+<p><code>\*\* 取消 Markdown 关键字</code></p>
+<p>效果:** 取消 Markdown 关键字</p>
+<h3 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h3><ul>
+<li><a href="http://www.jianshu.com/" target="_blank" rel="noopener">简书</a></li>
+<li><a href="https://github.com/" target="_blank" rel="noopener">github</a></li>
+</ul>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a href="http://wowubuntu.com/markdown/basic.html" target="_blank" rel="noopener">简明版 Markdown 语法说明(简体中文版)</a></li>
+<li><a href="http://wowubuntu.com/markdown/index.html" target="_blank" rel="noopener">完整版 Markdown 语法说明(简体中文版)</a></li>
+<li><a href="https://segmentfault.com/markdown" target="_blank" rel="noopener">Markdown 编辑器语法指南</a></li>
+<li><a href="https://www.zhihu.com/question/20409634" target="_blank" rel="noopener">怎样引导新手使用 Markdown?</a></li>
+</ul>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+            <!-- 分享按钮 -->
+            <!-- <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script> -->
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        <p class="reprint-tip">
+            <i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;
+            <span>转载规则</span>
+        </p>
+        
+            <div class="center-align">
+                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
+                    <img alt=""
+                         style="border-width:0"
+                         src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
+                </a>
+            </div>
+            <br/>
+            <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
+                  property="dct:title" rel="dct:type">
+                    《Markdown 简明教程》
+                </span> 由
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/markdown-concise-tutorial/" property="cc:attributionName"
+               rel="cc:attributionURL">
+                Henry
+            </a> 采用
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
+                知识共享署名 4.0 国际许可协议
+            </a>进行许可。
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6 overflow-policy" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/markdown-concise-tutorial/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Markdown 简明教程">
+                        
+                        <span class="card-title">Markdown 简明教程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Markdown 学习Markdown 是一种轻量级的「标记语言」, 它的优点很多, 目前也被越来越多的写作爱好者, 撰稿者广泛使用. 看到这里请不要被「标记」、「语言」所迷惑, Markdown 的语法十分简单. 常用的标记符号也不超过十
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-06
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/工具/" class="post-category" target="_blank">
+                                    工具
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Markdown/" target="_blank">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/coding-guidelines-js/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="js 编码指南">
+                        
+                        <span class="card-title">js 编码指南</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            js 代码规范单行代码块在单行代码块中使用空格
+不推荐
+function foo () {return true}
+if (foo) {bar = 0}
+推荐
+function foo() { return true }
+if (foo) 
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/前端/" class="post-category" target="_blank">
+                                    前端
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Js/" target="_blank">
+                        <span class="chip bg-color">Js</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+    
+
+</main>
+
+
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            本站由&copy;<a href="https://ctrl-shift-delete.github.io/" target="_blank">Henry</a> 基于
+            <a href="https://hexo.io/" target="_blank">Hexo</a> 的
+            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a> 主题搭建.
+
+            
+                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+                <span class="white-color">13.4k</span>
+            
+
+            
+			
+                <br>
+                
+                <span id="busuanzi_container_site_pv">
+                    <i class="fa fa-heart-o"></i>
+                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+                </span>
+                
+                
+                <span id="busuanzi_container_site_uv">
+                    <i class="fa fa-users"></i>
+                    次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                </span>
+                
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/ctrl-shift-delete" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:lhajh@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1309658793" class="tooltipped" data-tooltip="QQ联系我: 1309658793" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+<!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" autofocus id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+<!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+<script src="/libs/materialize/materialize.min.js"></script>
+<script src="/libs/masonry/masonry.pkgd.min.js"></script>
+<script src="/libs/aos/aos.js"></script>
+<script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+<script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+<script src="/js/matery.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    <script src="/libs/others/clicklove.js"></script>
+
+
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>
