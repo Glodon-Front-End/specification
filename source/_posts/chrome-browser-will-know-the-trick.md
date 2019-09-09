@@ -1,7 +1,7 @@
 ---
 title: Chrome 浏览器必知必会的小技巧
 date: 2017-12-03
-categories: [浏览器]
+categories: [Browser]
 tags: [Chrome]
 ---
 

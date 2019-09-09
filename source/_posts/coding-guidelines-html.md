@@ -2,8 +2,8 @@
 title: html 编码指南
 date: 2019-09-04
 cover: true
-categories: [前端]
-tags: [Html]
+categories: [FrontEnd]
+tags: [Html, Guidelines]
 ---
 ## html 规范
 

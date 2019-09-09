@@ -2,8 +2,8 @@
 title: css 编码指南
 date: 2019-09-03
 cover: true
-categories: [前端]
-tags: [Css]
+categories: [FrontEnd]
+tags: [Css, Guidelines]
 ---
 ## css 规范
 

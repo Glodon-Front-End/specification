@@ -66,6 +66,10 @@ index_generator:
   per_page: 12
   order_by: -date
 
+# 中文链接转拼音
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
 # Category & Tag
 default_category: uncategorized
 category_map:

@@ -1,7 +1,7 @@
 ---
 title: Git-Bash 的配置
 date: 2019-05-05
-categories: [工具]
+categories: [Software]
 tags: [Windows, Git]
 ---
 
